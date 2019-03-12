@@ -1,0 +1,18 @@
+
+
+body {
+  background-color: #444;
+  color: #fff;
+}
+
+
+@media screen and (min-width: 901px) {}
+
+@media screen and (max-width: 900px) {
+ body{
+    background-color: #87ADE2;
+   background-image: url("../img/away.png");
+     background: center center no-repeat;
+     background-size: contain;
+ }
+}

@@ -1,0 +1,20 @@
+
+
+body {
+  background-color: #fff;
+  color: #444;
+}
+
+
+@media screen and (min-width: 901px) {}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: #fff;
+    background-image: url("../img/home.png");
+    background: center center no-repeat;
+    background-size: contain;
+
+    
+  }
+}
