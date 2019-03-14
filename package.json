@@ -1,0 +1,34 @@
+{
+  "name": "everyothersaturday",
+  "version": "1.0.0",
+  "description": "This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.",
+  "main": "index.html",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0",
+    "npm-watch": "^0.6.0",
+    "parallelshell": "^3.0.2",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rimraf /src/css/stylesheet.css",
+    "scss": "node-sass -q -o src/css src/scss/stylesheet.scss",
+    "watch": "npm-watch",
+    "serve0": "live-server --port=3000 --no-css-inject --wait=200",
+    "start0": "npm run clean && npm run scss && npm run serve",
+    "serve": "live-server --quiet --port=3000 --no-css-inject --wait=200",
+    "start": "parallelshell \"npm run --silent scss && npm run --silent scss -- -w\" \"npm run --silent serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georginaneilson/georginaneilson.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georginaneilson/georginaneilson.github.io/issues"
+  },
+  "homepage": "https://github.com/georginaneilson/georginaneilson.github.io#readme"
+}

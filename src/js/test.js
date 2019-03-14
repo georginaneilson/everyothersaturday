@@ -89,8 +89,8 @@ let link = document.getElementById("stylesheet");
 
 if (closestMatch.home === "away") {
   console.log("away");
-  link.setAttribute("href", "css/stylesheetTwo.css");
+  link.setAttribute("href", "src/css/away.css");
 } else {
   console.log("home");
-  link.setAttribute("href", "css/stylesheetTwo-alt.css");
+  link.setAttribute("href", "src/css/home.css");
 }
