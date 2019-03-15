@@ -1,0 +1,9 @@
+@import "../partials/_mixins.scss";
+
+body {
+  background-color: #444;
+  color: #fff;
+  @include break(sm){
+    
+  }
+}

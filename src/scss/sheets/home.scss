@@ -1,12 +1,18 @@
+@import "../partials/_mixins.scss";
+
 body {
   background-color: #fff;
   color: #444;
   background-image: url("../img/home.png");
   background-size: cover;
-  background-repeat: no-repeat; }
-  @media (min-width: 768px) {
-    body {
-      background-image: none; } }
+  background-repeat: no-repeat;
+  @include break(sm){
+      background-image: none;
+  }
+}
+
+
+@media screen and (min-width: 901px) {}
 
 /* @media screen and (max-width: 900px) {
   body {

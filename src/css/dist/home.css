@@ -1,12 +1,7 @@
 body {
   background-color: #fff;
   color: #444;
-  background-image: url("../img/home.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media (min-width: 768px) {
-    body {
-      background-image: none; } }
+  background-image: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/72/54/07/shutterstock-586549253.jpg"); }
 
 /* @media screen and (max-width: 900px) {
   body {

@@ -13,13 +13,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "clean": "rimraf /src/css/stylesheet.css",
-    "scss": "node-sass -q -o src/css src/scss/stylesheet.scss",
+    "clean": "rimraf /src/css/dist/*",
+    "scss": "node-sass -q -o src/css src/scss/sheets",
     "watch": "npm-watch",
     "serve0": "live-server --port=3000 --no-css-inject --wait=200",
     "start0": "npm run clean && npm run scss && npm run serve",
     "serve": "live-server --quiet --port=3000 --no-css-inject --wait=200",
-    "start": "parallelshell \"npm run --silent scss && npm run --silent scss -- -w\" \"npm run --silent serve\""
+    "start": "parallelshell \"npm run clean && npm run --silent scss && npm run --silent scss -- -w\" \"npm run --silent serve\""
   },
   "repository": {
     "type": "git",
