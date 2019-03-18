@@ -45,6 +45,9 @@ img {
   flex-direction: column;
   padding: 24px;
   align-items: center;
+
+  color: white !important;
+  // display: none;
 }
 
 
@@ -63,7 +66,7 @@ img {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   padding: 24px;
-  color: #444444;
+  // color: #444444;
   text-align: center;
   margin: 24px;
 }

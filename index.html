@@ -11,10 +11,10 @@
   <title>EoS</title>
 
   <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
-<link rel="manifest" href="src/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="src/favicon/site.webmanifest">
 
   <!-- Bootstrap core CSS -->
   <link href="src/css/bootstrap.min.css" rel="stylesheet">
@@ -32,14 +32,21 @@
 
   <!-- Wrap the rest of the page in another container to center all the content. -->
   <div class="wrapper">
-<div class="icon animated infinite bounce">⚽</div>
+    <!-- <div class="icon animated infinite bounce">⚽</div> -->
 
-        
-          <p class="u-center"><span id="date"></span></p>
-          <div class="card">
-<p>days until</p>
-<p>Rangers play against <span id="team"></span></p>
-<i class="fas fa-map-marker-alt map-icon"></i> <p class="u-inline"><span id="home"></span></p>
+
+    <span id="optionalDate">
+      <p class="u-center"><span id="date"></span></p>
+    </span>
+    <div class="card">
+
+      <span id="optionalDays">
+        <p>days until</p>
+      </span>
+      <p>Rangers play against <span id="team"></span><span id="optionalToday"></span></p>
+      <p id="time" class="time"></p>
+      <i class="fas fa-map-marker-alt map-icon"></i>
+      <p class="u-inline"><span id="home"></span></p>
 
     </div>
   </div>
